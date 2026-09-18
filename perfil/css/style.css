@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(196, 192, 190);
+}
+.listas{
+    border: 1px solid red;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /*Tamanho de largura*/
+    max-width: 600px;
+    /*Centralizar listas*/
+    margin: auto;
+    /*Vai deixar o display em blocos*/
+    display: block;
+}
+.lista{
+    /*Tamanho de largura*/
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    display: inline-block;
+}

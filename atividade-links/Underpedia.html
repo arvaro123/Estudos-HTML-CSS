@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <tittle>Quit...</tittle>
+        <meta>
+        <style>
+            @font-face {
+                font-family: Undertale;
+                src: url("fontes/PixelOperatorSC-Bold.ttf");
+
+                font-family: titulo;
+                src: url("fontes/PixelOperatorHBSC.ttf");
+            }
+            body {
+                font-family: Undertale;
+                margin: 0;
+                background-image: url("background.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                display: flex;
+                justify-content: center;
+                color: azure;
+                text-align: center;
+            }   
+            .sans-container {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 550px;
+                background-image: url(backgroundsans.jpg);
+                background-size: cover;
+                border: 2px solid azure;
+            }
+            .retangulo {
+                position: relative;
+                background-color: black;
+                width: 800;
+                height: 2000;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+            }
+            .voltar {
+                position: fixed;
+                top: 15px;
+                left: 15px;
+                padding: 7px 12px;
+                border: 1px solid #999;
+                color: #111;
+                background: #f7f7f7;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+
+            .voltar:hover {
+                background: #111;
+                color: white;
+            }
+             .Bad time {
+                position: fixed;
+                top: 50px;
+                left: 50px;
+                padding: 7px 12px;
+                border: 1px solid #999;
+                color: #111;
+                background: #f7f7f7;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+
+            .Bad time:hover {
+                background: #111;
+                color: white;
+            }
+            .quadrado {
+                position: absolute;
+                top: 300px;
+                bottom: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 800;
+                height: 1800;
+                background-color: #133135;
+                color: black;
+                
+            }
+            .quadrado1 {
+                font-family: titulo;
+                position: absolute;
+                top: 350px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 750px;
+                height: 125px;
+                background-color: black;
+                border:3px solid azure;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                bottom: 30px;
+            }
+            h1 {
+                margin: 15;
+                font-family: titulo;
+                text-align: center;
+                font-size: 110px;
+            }
+            p {
+                margin: 15;
+                font-size: 18px;
+            }
+        </style>
+        <body>
+            <div class="retangulo">
+                   <div class="quadrado">
+                        <a href="HOME.html" class="voltar"> Voltar</a>
+                        <a href="Bad time.html" class="Bad time">Bad time</a>
+                   </div>
+                <h1>Underpedia</h1>
+                <p>Seja Bem Vinda Doris</p>
+                   <div class="quadrado1">
+                        <a>primeiro card</a>
+                        <a1>Undertale é um jogo de RPG criado por Toby Fox. A história acompanha uma criança humana que cai em um mundo subterrâneo habitado por monstros. Para voltar à superfície, ela precisa atravessar esse mundo e enfrentar diversos personagens e desafios.</a1>
+                   </div>
+                   <div class="sans-container">
+                        <img src="https://media.tenor.com/_1v-PtLJhRwAAAAj/sans-sans-undertale.gif" width="200" alt="Sans dançando">
+                   </div>
+            </div>
+        </body>
+    </head>
+</html>

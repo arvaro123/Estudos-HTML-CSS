@@ -1,0 +1,30 @@
+.table{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color: rgb(28, 28, 95);
+}
+.fundo{
+    background-color: black;
+}
+.fundo-lista{
+    background-color: rgb(85, 15, 15);
+    color: white;
+    border-color: rgb(28, 28, 95);
+}
+.fundo-cyberworld{
+    background-color: aquamarine;
+    border-color: rgb(28, 28, 95);
+}
+.fundo-lightworld{
+    background-color: rgb(238, 238, 142);
+}
+.fundo-darkworld{
+    background-color: rgb(95, 49, 138);
+}
+.fundo-cardworld{
+    background-color: rgb(179, 87, 87);
+}
+a {
+    color: rgb(223, 136, 6);
+}

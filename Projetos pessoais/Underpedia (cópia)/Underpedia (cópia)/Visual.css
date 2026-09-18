@@ -1,0 +1,163 @@
+    
+
+body { 
+    font-family: Undertale;
+    margin: 0;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    text-align: center;
+}   
+.sans-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 525px;
+    background-image: url("backgroundsans.jpg");
+    background-size: cover;
+    padding:50px;
+    border: 2px solid white; 
+}
+.sans-container::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    background-image: url("sua-imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.retangulo {
+    position: relative;
+    background-color: black;
+    width: 800;
+    height: 2000;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+h1 {
+    position: absolute;
+    margin: 15;
+    top: 30px;
+    left: 130px;
+    font-family: titulo;
+    font-size: 110px;
+}
+p {
+    position: relative;
+    top: 180px;
+    margin: 5;
+    font-size: 18px;
+}
+.quadrado {
+    position: absolute;
+    top: 300px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800;
+    height: 1800;
+    background-color: #133135;
+    color: black;           
+}
+.quadrado1 {
+    font-family: titulo;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750px;
+    height: 125px;
+    background-color: black;
+    border:3px solid azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    bottom: 30px;
+}
+.botao {
+    position: relative;
+    top: 225px;
+    left: 60px;
+    border: 2px solid white;
+    color: white;
+    padding: 7px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+.botao:hover {
+    border-color: yellow;
+    color:rgba(255, 238, 0, 0.945);
+    text-decoration: none;
+}
+.botao2 {
+    position: relative;
+    top: 225px;
+    right: 60px;
+    border: 2px solid white;
+    color: white;
+    padding: 7px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+.botao2:hover {
+    border-color: yellow;
+    color:rgba(255, 238, 0, 0.945);
+    text-decoration: none;
+}
+.botao-gaster {
+    background-color: #133135;
+    background-image: url(icones-do-pirata/cabeca-do-pirata.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: fixed;
+    top: 88%;
+    left: 93%;
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+.pirate-gang {
+    border: 2px solid azure;
+    transform: scaleX(-1);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 250px;
+    height: 250px;
+}
+.pirata-gif-1 {
+    border: 2px solid azure;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 250px;
+    height: 250px;
+}
+.janela {
+    background-color: rgb(97, 24, 165);
+    color: black;
+    border: 2px solid rgb(95, 178, 226);
+    border-top: 20px solid rgb(95, 178, 226);
+    position: fixed;
+    top: 10%;
+    left: 55%;
+    transform: translateX(-54%);
+    width: 80vw;
+    height: 80vh;
+    display: none;
+    z-index: 100;
+}

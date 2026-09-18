@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(193, 230, 202);
+    justify-content: center;
+}
+.grid-container{
+    background-color: rgb(33, 88, 42);
+    padding: 10px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 220px 240px 360px 200px;
+    grid-template-rows: 50px 20px 300px 100px ;
+    grid-template-areas: 
+    "box-1 -- box2 box-3"
+    "box-4 box-6 box-6 box-10"
+    "box-5 box-6 box-6 box-10"
+    "box-5 box-7 box-8 box-10"
+    ;
+}
+.box-1{
+    grid-area: box-1;
+    background-color: white;
+}
+.box-2{
+     grid-area: box-2;
+     background-color: white;
+}
+.box-3{
+     grid-area: box-3;
+     background-color: white;
+}
+.box-4{
+     grid-area: box-4;
+     background-color: white;
+}
+.box-5{
+     grid-area: box-5;
+     background-color: white;
+}
+.box-6{
+     grid-area: box-6;
+     background-color: white;
+}
+.box-7{
+     grid-area: box-7;
+     background-color: white;
+}
+.box-8{
+     grid-area: box-8;
+     background-color: white;
+}.box-9{
+     grid-area: box-9;
+     background-color: white;
+}.box-10{
+     grid-area: box-10;
+     background-color: white;
+}

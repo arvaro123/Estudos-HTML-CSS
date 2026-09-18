@@ -1,0 +1,33 @@
+body {
+    background-image: url(fundo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caixa {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 25px 200px 50px 200px;
+    padding: 5px 20px 20px 20px;
+    width: 300px;
+    font-size: 7px;
+    text-align: center;
+    background-color: rgb(141, 127, 87);
+}
+.fundo-personagens {
+    position: relative;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    background-image: url(fundo-card.jpg);
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    z-index: 200;
+}

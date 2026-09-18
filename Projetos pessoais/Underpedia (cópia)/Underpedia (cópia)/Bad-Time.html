@@ -1,0 +1,206 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>quit...</title>
+</head>
+    <style>
+        @font-face {
+            font-family: Botao;
+            src: url(fontes/PixelOperatorSC-Bold.ttf);
+        }
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 60px;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .botaofight {
+            border: 3px solid orange;
+            color: orange;
+            padding: 0px;
+            width: 200px;
+            text-align: center;
+            font-size: larger;
+            font-size: 50px;
+        }
+        .botaoact {
+            border: 3px solid orange;
+            color: orange;
+            padding: 0px;
+            width: 150px;
+            text-align: center;
+            font-size: larger;
+            font-size: 50px;
+        }
+        .botaoitem {
+            border: 3px solid orange;
+            color: orange;
+            padding: 0px;
+            width: 150px;
+            text-align: center;
+            font-size: larger;
+            font-size: 50px;
+        }
+        .botaomercy {
+            border: 3px solid orange;
+            color: orange;
+            padding: 0px;
+            width: 200px;
+            text-align: center;
+            font-size: 50px;
+        }
+        .menubotao {
+            font-family: Botao;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        .menubotao:hover {
+            border-color: yellow;
+            color: rgba(255, 238, 0, 0.945);
+            text-decoration: none;
+        }
+        .menu-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+        }
+        .menubotao:hover .icone-normal{
+            display: none;
+        }
+        .menubotao:hover .icone-hover {
+            display: flex;
+        }
+        .icone-normal {
+            display: flex;
+            width: 24px;
+            right: 24px;
+        }
+        .icone-hover{
+            display: none;
+            width: 24px;
+            right: 24px;
+        }
+        .box {
+            position: relative;
+            background-color: black;
+            color: azure;
+            border: 7px solid white;
+            width: 900px;
+            height: 240px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: Botao;
+            font-size: 20px;
+            justify-content: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .area-inimigo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .imagem-inimigo{
+            width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .hp-inimigo-container{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        .barra-hp-inimigo-fundo {
+            width: 200px;
+            height: 20px;
+            background-color: #444;
+            border: 2px solid color white;
+        }
+        .barra-hp-inimigo-atual{
+            height: 100%;
+            background-color: rgb(41, 226, 41);
+            width: 100%;
+            transition: widht 0.3s;
+        }
+        .barra-ataque-container{
+            width: 100%;
+            height: 170px;
+            position: relative;
+            display: none;
+            margin-top: 0;
+        }
+        .barra-movel{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background-color: white;
+        }
+        .imagem-barra-fundo{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            display: block;
+        }
+    </style>
+        <body>
+            <div class="area-inimigo">
+                <img class="imagem-inimigo" src="bosses/spoockmonth.png" id="imagem-inimigo">
+
+                    <div class="hp-inimigo-container">
+                        <span>HP</span>
+                    </div>
+                    <div class="barra-hp-inimigo-fundo">
+                        <div class="barra-hp-inimigo-atual" id="barra-hp-inimigo"></div>
+                    </div>
+                    <span id="texto-hp-inimigo">50/50</span>
+            </div>
+
+            <div class="box">
+                <p id="texto-resultado">Você se enche de SPOOCK MONTH!!!</p>
+
+                <div class="barra-ataque-container" id="barra-container">
+                    <img  class="imagem-barra-fundo" src="icones/barradeataque.png">
+                    <div class="barra-movel" id="barra-movel"></div>
+                </div>
+            </div>
+            
+            <div class="menu-container">
+                <button class= "botaofight menubotao" id="botao-fight">
+                    <img class="icone-normal" src="icones/espada.png">
+                    <img class="icone-hover" src="icones/coracao.png">  
+                    FIGHT
+                </button>
+                <button class= "botaoact menubotao" id="botao-act">
+                    <img class="icone-normal" src="icones/fala.png">
+                    <img class="icone-hover" src="icones/coracao.png">
+                    ACT
+                </button>
+                <button class= "botaoitem menubotao" id="botao-item">
+                    <img class="icone-normal" src="icones/abacaxikk.png">
+                    <img class="icone-hover" src="icones/coracao.png">
+                    ITEM
+                </button>
+                <button class= "botaomercy menubotao" id="botao-mercy">
+                    <img class="icone-normal" src="icones/x.png">
+                    <img class="icone-hover" src="icones/coracao.png">
+                    MERCY
+                </button>
+            </div>
+
+            <script src="Parte-dificil.js"></script>
+        </body>
+</html>
