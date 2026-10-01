@@ -1,0 +1,52 @@
+*{margin: 0%;padding: 0%; list-style: none;}
+
+body{
+    background-color: #2e3038;
+    text-align: center;
+}
+@font-face {
+    font-family: 'MovieFilmstrip';
+    src: url('caminho/do/arquivo/Movie-Filmstrip.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#container-barra{
+    min-width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin: 50px 200px auto 200px;
+    background-color: #2e3038;
+    box-shadow: 3px 6px 15px #222121;
+}
+#container-barra, span{
+    background-color: #36383d;
+    color: rgb(243, 228, 198);
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-size: 25px;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+#container-barra, span:hover{
+    color: orange;
+    transform: translateY( 3px);
+    cursor: pointer;
+}
+h1{
+    font-size: 200px;
+    color: aliceblue;
+    font-family: 'MovieFilmstrip', sans-serif;
+    margin: 100px 100px 20px 100px;
+}
+h2{
+    font-size: 20px;
+    color: rgb(211, 219, 226);
+    margin: 20px;
+}
+.container-grid{
+    background-color: blanchedalmond;
+    display: flex;
+    padding: 40px;
+    margin: 10px 600px 20px 600px;
+}
