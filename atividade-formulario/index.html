@@ -9,52 +9,83 @@
 <body>
     
     <div class="container">
-        <h1>Cadastre sua Flor</h1>
+    <h1>Faça seu Pedido de Flores</h1>
 
-        <form>
-            <div class="from-control">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome"/>
-            </div>
+    <form>
+        <div class="form-control">
+            <label for="remetente">Nome do remetente:</label>
+            <input type="text" id="remetente"/>
+        </div>
 
-            <br>
+        <br>
 
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input type="email" id="email"/>
-            </div>
+        <div class="form-control">
+            <label for="email">E-mail para confirmação:</label>
+            <input type="email" id="email"/>
+        </div>
 
-            <br>
+        <br>
 
-            <div class="form-control">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha"/>
-            </div>
+        <div class="form-control">
+            <label for="telefone">Telefone / WhatsApp:</label>
+            <input type="tel" id="telefone"/>
+        </div>
 
-            <br>
+        <br>
 
-            <div class="form-control">
-                <label for="data">Data de nacimento:</label>
-                <input type="date" id="data"/>
-            </div>
+        <div class="form-control">
+            <label for="senha">Senha para acompanhar o pedido:</label>
+            <input type="password" id="senha"/>
+        </div>
 
-            <div class="form-control">
-                <label for="curso">Curso:</label>
-                <select id="curso">
-                    <option value="">Selecione</option>
-                    <option value="informatica">Informatica</option>
-                    <option value="programacao">Programação</option>
-                </select>
-            </div>
+        <br>
 
-            <br>
+        <div class="form-control">
+            <label for="pedido">Nome do pedido:</label>
+            <input type="text" id="pedido"/>
+        </div>
 
-            <div class="form-control">
-                <button type="submit" class="button_cadastro">Cadastrar</button>
-                <button type="reset" class="button_limpar">Limpar</button>
-            </div>
-        </form>
-    </div>
+        <br>
+
+        <div class="form-control">
+            <label for="flor">Tipo de flor:</label>
+            <select id="flor">
+                <option value="">Selecione</option>
+                <option value="rosa">Rosa</option>
+                <option value="girassol">Girassol</option>
+                <option value="orquidea">Orquídea</option>
+                <option value="lirio">Lírio</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="form-control">
+            <label for="quantidade">Quantidade de buquês:</label>
+            <input type="number" id="quantidade" min="1"/>
+        </div>
+
+        <br>
+
+        <div class="form-control">
+            <label for="endereco">Endereço de entrega:</label>
+            <input type="text" id="endereco"/>
+        </div>
+
+        <br>
+
+        <div class="form-control">
+            <label for="data">Data de entrega:</label>
+            <input type="date" id="data"/>
+        </div>
+
+        <br>
+
+        <div class="form-control">
+            <button type="submit" class="button_cadastro">Finalizar o pedido</button>
+        </div>
+    </form>
+</div>
 
 </body>
 </html>
